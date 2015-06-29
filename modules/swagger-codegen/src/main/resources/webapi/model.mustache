@@ -1,0 +1,17 @@
+{{#models}}
+{{#model}}
+namespace Api.Models
+{
+    /// <description>
+    /// {{description}}
+    /// </description>
+    public class {{classname}}
+    {
+    	{{#vars}}
+        public {{{datatype}}} {{name}} { get; set; }
+        {{/vars}}
+    }
+}
+{{/model}}
+{{/models}}
+

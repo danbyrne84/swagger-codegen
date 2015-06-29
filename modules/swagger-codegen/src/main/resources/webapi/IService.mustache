@@ -1,0 +1,11 @@
+namespace Api.Model
+{
+    public interface IService<{{classname}}>
+    {
+        {{#operations}}
+        {{#operation}}
+            public {{returnType}} {{operationId}};
+        {{/operation}}
+        {{/operations}}
+    }
+}
